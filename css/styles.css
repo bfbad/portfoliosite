@@ -1,0 +1,345 @@
+/** GLOBAL **/
+
+* { 
+  box-sizing: border-box; 
+}
+
+html,body {
+  background-color: #F7D08A;
+  color: #34495e;
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.fixed-btn {
+  background-color: black;
+  text-align: center;
+  position: fixed;
+  margin: 0 auto;
+  width: 10em;
+  height: 3em;
+  right: 0;
+  top: 50%;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.fixed-btn a {
+  color: white;
+}
+
+.fixed-btn a:hover {
+  text-decoration: none;
+}
+
+.anchor {
+  padding-top: 50px;
+}
+
+/** TYPOGRAPHY **/
+
+h1,
+h2, 
+h3,
+p,
+li {
+  font-family: Roboto, Futura, Helvetica, Arial, sans-serif;
+}
+
+/** NAVIGATION **/
+
+.navbar-brand a {
+  color: #F7D08A;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar-default {
+  background-color: #0B1D51;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #F7D08A;
+  transition: background-color 500ms;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #8CFF98;
+  background-color: white;
+}
+
+.navbar-toggle{
+  color: #F7D08A;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #F7D08A;
+}
+
+.dropdown-menu {
+  padding: 0;
+}
+
+.dropdown-option {
+  background-color: #0B1D51; 
+}
+
+.dropdown-menu>li>a {
+  color: #F7D08A;
+  transition: background-color 500ms;
+}
+
+.dropdown-menu>li>a:hover {
+  color: #8CFF98;
+  background-color: white;
+}
+
+/** INDEX **/
+
+.carousel-caption {
+  position: absolute;
+  color: #0B1D51;
+  padding-bottom: 3%;
+}
+
+.carousel-caption h3 {
+  font-weight: 900;
+}
+
+.carousel {
+  margin-left: -2em;
+  margin-right: -2em;
+}
+
+.item img {
+  opacity: 0.35;
+  filter: alpha(opacity=35); /* For IE8 and earlier */
+}
+
+.carousel-indicators {
+  padding-bottom: 1%;
+}
+
+.work-img {
+  display: block;
+  margin: 2em auto;
+  max-width: 200px;
+  position: relative;
+}
+
+.big-img {
+  display: block;
+  margin: 2em auto;
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  top: 10%;
+  left: 22%;
+  color: black;
+  font-family: Futura;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  line-height: 1.6;
+  display:none;
+}
+
+.big-info {
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  color: black;
+  font-family: Futura;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5em;
+  line-height: 1.6;
+  display:none;
+}
+
+.proj-title {
+  font-weight: 100;
+}
+
+/** FAQ **/
+
+#faq-container {
+  padding-top: 2em;
+}
+
+#accordion .panel-heading {
+  background-color: #6F8AB7;  
+  font-family: Roboto, Garamond, sans-serif;
+  color: #363635;
+  text-decoration: none;
+}
+
+#accordion a:hover {
+  text-decoration: none;
+}
+
+#accordion a {
+  text-decoration: none;
+}
+
+#accordion .panel-body {
+  background-color: #8CFF98;
+  font-family: Roboto, Garamond, sans-serif;
+  color: #363635;
+  text-decoration: none;
+
+}
+
+/** CONTACT **/
+
+#contact{
+  background-image: url("../img/jacksonville.jpg");
+  /*Add a background image*/
+  background-attachment: fixed;
+  /*Give the background a fixed position does it not scroll when you scroll*/
+  background-size: cover;
+  /*Have the background cover the entire div section*/
+  color: white;
+  /*Change the color of the text on top so it is readable, and adjust the padding as needed.*/
+  padding: 100px;
+  padding-top: 50px;
+}
+
+#contact h1 {
+  font-weight: 900;
+  margin-bottom: 1em;
+}
+
+.contact-info {
+  color: white;
+  text-align: left;
+  font-size: 1em;
+}
+
+.contact-container {
+  text-align: center;
+  padding-bottom: 3em;
+}
+
+.address img {
+  float: left;
+}
+
+.address p {
+  margin-bottom: 0;
+}
+
+.glyphicon:hover {
+  color: #F7D08A;
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+/** ABOUT **/
+
+#about-header {
+  padding-top: 2em;
+}
+
+.header h1 {
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.image {
+  display: inline-block;
+  float: left;
+  text-align: -webkit-center;
+}
+
+.main-text {
+  clear: both;
+  margin: 2em auto;
+  padding: 2em 1em;
+  
+}
+
+#skill-list {
+  margin-left: 4em;
+}
+
+.skills h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skills {
+  background-color: #5AD4C2;
+  color: #FFF;
+}
+
+.about-columns {
+  padding-top: 2em;
+}
+
+/** FOOTER **/
+
+.social {
+  padding-left: 1em;
+}
+
+.copy {
+  text-align: right;
+  vertical-align: middle;
+  font-weight: 100;
+  padding-right: 2em;
+  display: inline-block;
+  float: right;
+}
+
+footer {
+  padding-bottom: 3em;
+}
+
+.soc {
+  float: left;
+}
+
+.twitter {
+  padding-right: 2em;
+}
+
+/** FORM STYLES **/
+
+.two-fields {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#field1 {
+  padding-left: 0;
+}
+
+#field2 {
+  padding-right: 0;
+}
+
+.learn-more {
+  text-align: left;
+  float: left;
+  padding-left: 15px;
+}
+
+.modal-button {
+  float: right;
+  padding: 15px;
+}
+
+#modal-embed {
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+}
